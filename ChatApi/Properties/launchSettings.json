@@ -1,0 +1,42 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:22672",
+      "sslPort": 44333
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SecretKey": "2esfvsle34sfp5523fsfdgg34gs1ebh3egmwsdlggs4",
+        "connection_string": "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=password"
+      }
+    },
+    "ChatApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SecretKey": "2esfvsle34sfp5523fsfdgg34gs1ebh3egmwsdlggs4",
+        "connection_string": "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=password"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
